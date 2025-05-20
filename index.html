@@ -1,9 +1,108 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<html lang="en">
+<head>
+  <!-- META DATA -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pasta Paradise Order</title>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.amber-orange.min.css" />
+</head>
+<body>
+  <!-- MDL HEADER -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">PASTA PARADISE!!</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">PASTA PARADISE!</span>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </main>
+  </div>
+  <!-- HEADER-->
+  <h1>Pasta Paradise 🍝</h1>
+
+  <!-- PASTA IMAGE -->
+  <img src="images/PastaImage.jpg" alt="Pasta" width="100">
+    <!-- PASTA SIZE DROP DOWN -->
+  <label for="pSize">Pasta Size:</label>
+  <select id="pSize">
+    <option value="">None</option>
+    <option value="Medium">Medium - $8.99</option>
+    <option value="Large">Large - $13.99</option>
+  </select>
+
+  <!-- PASTA TYPE DROP DOWN -->
+  <label for="pType">Pasta Type:</label>
+  <select id="pType">
+    <option value="">None</option>
+    <option value="Spaghetti">Spaghetti</option>
+    <option value="Penne">Penne</option>
+    <option value="Ravioli">Ravioli</option>
+    <option value="Linguine">Linguine</option>
+  </select>
+
+   <!-- PASTA SAUCE DROP DOWN -->
+  <label for="pSauce">Sauce:</label>
+  <select id="pSauce">
+    <option value="">None</option>
+    <option value="Marinara">Marinara - $4.99</option>
+    <option value="Alfredo">Alfredo - $4.99</option>
+    <option value="Bolognese">Bolognese - $4.99</option>
+    <option value="Pesto">Pesto - $4.99</option>
+  </select>
+
+ <!-- CHEESE PICKER -->
+  <label for="pCheese">Cheese:</label>
+  <select id="pCheese">
+    <option value="">No Cheese</option>
+    <option value="Mozzarella">Mozzarella - $1.99</option>
+    <option value="Ricotta">Ricotta - $1.99</option>
+    <option value="Parmesan">Parmesan - $1.99</option>
+  </select>
+
+ <!-- EXTRAS -->
+  <label for="extraSauce">
+    <input type="checkbox" id="extraSauce" /> Add Extra Sauce (+$2.00)
+  </label>
+
+
+  <label for="extraCheese">
+    <input type="checkbox" id="extraCheese" /> Add Extra Cheese (+$1.00)
+  </label>
+
+ <!-- GREENS -->
+  <label for="greens">
+    <input type="checkbox" id="greens" /> Add Greens (+$0.99)
+  </label>
+
+
+  <label for="extraGreens">
+    <input type="checkbox" id="extraGreens" /> Add Extra Greens (+$0.50)
+  </label>
+
+ <!-- BUTTON -->
+  <button onclick="submitOrder()">Submit Order</button>
+
+
+  <div id="orderSummary"></div>
+  <div id="taxDetails"></div>
+
+
+  <script src="js/script.js"></script>
+</body>
 </html>

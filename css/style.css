@@ -1,4 +1,69 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
-* This file contains the CSS for index.html
-*/
+/* css/style.css */
+
+
+/* Background color using HTML color name */
+body {
+    background-color: rgb(230, 217, 173);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+/* Heading color using RGB */
+h1 {
+    color: rgba(70, 58, 7, 0.603);
+}
+
+
+/* Info text color using HSL */
+.info-text {
+    color: hsl(120, 100%, 25%);
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+
+/* Using HEX for a label color */
+label {
+    color: #bd7355;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+
+input {
+    padding: 5px;
+    width: 150px;
+}
+
+
+#result {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: rgb(14, 0, 139);
+}
+
+
+.page-content {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+.mdl-textfield {
+    width: 100%;
+}
+
+
+.section-title {
+    margin-top: 32px;
+}
+
+
+#taxDetails {
+    margin-top: 20px;
+    font-size: 1.1em;
+    white-space: pre-line;
+}
